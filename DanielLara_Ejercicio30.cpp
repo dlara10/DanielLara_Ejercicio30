@@ -12,10 +12,11 @@ int main(){
     float u[m+1];
     float u0[m+1];
     float uf[m+1];
-    float dt = beta*dx/c;
-    float Tfinal = 0.5;
+    float dt = 0.01;
+    float Tfinal = 2.0;
     int n = Tfinal/dt;
-    int i, j, t;
+    int i, j;
+    float t = 0.0;
     double pi = asin(1.0)*2.0;
     int x;
     ofstream outfile;
